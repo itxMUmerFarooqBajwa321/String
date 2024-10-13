@@ -2,7 +2,6 @@
 #define STRING_H
 #include<iostream>
 using namespace std;
-class Date;
 class String
 {
 	char* data;
@@ -60,7 +59,7 @@ public:
 	String& operator = (const String& ref);   // deep copy assignment
 	String& operator =(String&& ref);    // assignment which moves resources
 	String & operator =(const long long int num);
-	String operator () (const String& delim);
+	//String operator () (const String& delim);
 	//String& operator = (const double num);
 	~String();
 };
