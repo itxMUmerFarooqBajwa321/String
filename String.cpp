@@ -646,17 +646,6 @@ String& String::operator =(String&& ref)
 	ref.data = nullptr;
 	return *this;
 }
-String String::operator () (const String& delim)
-{
-	int i = 0;
-	int strLen = getLength();
-	while (i < strLen && (delim.find(data[i]) >= 0) )
-	{
-		i++;
-	}
-	if (i);
-	exit(0);
-}
 String::~String()
 {
 	if (!data)
